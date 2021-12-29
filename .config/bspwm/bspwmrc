@@ -7,7 +7,9 @@ nitrogen --restore
 nm-applet &
 flameshot &
 sleep 2 && conky -c $HOME/.config/conky/default.conkyrc
-
+fsearch &
+dunst &
+thunderbird &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
@@ -21,7 +23,9 @@ bspc config gapless_monocle      true
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
 bspc rule -a vlc desktop='^10'
-bspc rule -a mplayer2 state=floating
+bspc rule -a Fsearch desktop='^9'
+bspc rule -a Mail desktop='^8'
+bspc rule -a Nitrogen state=floating
 bspc rule -a org.gnome.nautilus state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
