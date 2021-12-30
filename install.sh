@@ -21,3 +21,8 @@ sudo cp -r tokyonightbspwm/.config ~
 mkdir ~/.config/fish
 sudo cp /usr/share/fish/config.fish ~/.config/fish/
 
+bash
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+echo 'starship init fish | source' > ~/.config/fish/config.fish
+
