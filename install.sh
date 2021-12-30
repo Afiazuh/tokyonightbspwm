@@ -11,5 +11,9 @@ echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg arch=
 
 sudo apt update
 
-sudo apt install bspwm sxhkd flameshot nitrogen compton conky fsearch thunderbird libreoffice kitty rofi pcmanfm brave brightnessctl 
+sudo apt install fish bspwm sxhkd flameshot nitrogen compton conky fsearch thunderbird libreoffice kitty rofi pcmanfm brave brightnessctl vlc git wget 
 
+###  {Create My Personalized Desktop}  ###
+git clone https://github.com/Afiazuh/tokyonightbspwm.git
+sudo cp -r tokyonightbspwm/.fonts/ ~
+sudo cp -r tokyonightbspwm/.config ~
