@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 ###  {MINIMAL BSPWM FOR DEBIAN}###
 sudo apt update && sudo apt upgrade 
