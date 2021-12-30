@@ -17,3 +17,7 @@ sudo apt install fish bspwm sxhkd flameshot nitrogen compton conky fsearch thund
 git clone https://github.com/Afiazuh/tokyonightbspwm.git
 sudo cp -r tokyonightbspwm/.fonts/ ~
 sudo cp -r tokyonightbspwm/.config ~
+
+mkdir ~/.config/fish
+sudo cp /usr/share/fish/config.fish ~/.config/fish/
+
