@@ -300,14 +300,22 @@ tray-background = ${colors.background}
 [bar/mainbar-bspwm]
 monitor = ${env:MONITOR}
 ;monitor-fallback = HDMI1
-width = 95%
+;width = 95%
+;height = 25
+;offset-x = 2%
+;offset-y = 1%
+;radius = 13
+;fixed-center = true
+;bottom = false
+separator = 
+
+width = 100%
 height = 25
-offset-x = 2%
-offset-y = 1%
-radius = 13
+offset-x = 0%
+offset-y= 0 
+radius =0 
 fixed-center = true
 bottom = false
-separator = 
 
 background = ${colors.background}
 foreground = ${colors.foreground}
@@ -336,7 +344,7 @@ module-margin-left = 0
 module-margin-right = 0
 
 ;https://github.com/jaagr/polybar/wiki/Fonts
-font-0 = "FiraCode Nerd Font:size=10;2"
+font-0 = "CodeNewRoman Nerd Font:style=Italic:size=10;2"
 font-1 = "CodeNewRoman Nerd Font:style=Regular:size=11;2"
 font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"

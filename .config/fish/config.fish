@@ -256,4 +256,5 @@ end
 
 
 starship init fish | source
+neofetch 
 
