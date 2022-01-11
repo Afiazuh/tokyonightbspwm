@@ -1,12 +1,12 @@
 configuration{
     modi: "drun";
     lines: 5;
-    font: "Iosevka 12";
+    font: "JetBrains Mono NL  11";
     show-icons: true;
-    icon-theme: "Oranchelo";
+    icon-theme: "papirus";
     terminal: "st";
     drun-display-format: "{icon} {name}";
-    display-drun: "  ";
+    display-drun: "  ";
     location: 0;
     separator-style: "solid";
     disable-history: false;
@@ -21,13 +21,13 @@ element-text, element-icon {
 }
 
 * {
-    dark-black: #1e2122;
+    dark-black: #414868;
     bg-col:  #222526;
     border-col: #282b2c;
     selected-col: #282b2c;
-    blue: #8dae88;
-    fg-col: #d4be98;
-    fg-col2: #df736d;
+    blue:  #73daca;
+    fg-col: #c0caf5;
+    fg-col2: #f7768e;
     width: 600;
 }
 
