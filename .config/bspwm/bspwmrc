@@ -6,11 +6,11 @@ sh ~/.config/polybar/launch.sh &
 #polybar &
 #nitrogen --set-zoom-fill --random
 nitrogen --restore  &
-nm-applet &
+#nm-applet &
 #flameshot &
 sleep 2 && conky -c $HOME/.config/conky/default.conkyrc
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor -d      ﬏     
 
 
 bspc config border_width         1
