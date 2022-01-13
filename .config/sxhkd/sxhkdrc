@@ -20,17 +20,24 @@ super + Escape
 super + shift + p
 	flameshot full -p Pictures/screenshots
 
-#super + shift + f
-#	rofi -modi "Global Search":"rofi-spotlight/rofi-spotlight.sh" -show "Global Search" \-config rofi-spotlight/rofi.rasi
-
 super + shift + e
-	pcmanfm
+	nemo
+
+super + shift + r
+	kitty -e ranger
+
+ctrl + Escape
+	xkill
+
+ctrl + l
+	i3lock -i Pictures/minimalist.jpg  -t
 
 super + shift + b
 	brave
 
 super + shift + f
 	fsearch
+
 super + shift + n
 	firefox web.whatsapp.com
 
@@ -39,6 +46,9 @@ super + shift + u
 
 super + shift + i
 	brightnessctl set 5%+ 
+
+super + ctrl + alt + q
+	shutdown now
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
