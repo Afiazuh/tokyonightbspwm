@@ -1,54 +1,62 @@
-#
-# wm independent hotkeys
-#
+# Restart sxhkd
+super + shift + Escape
+	pkill -USR1 -x sxhkd; \
+	notify-send "sxhkd restarted"
 
-# terminal emulator
+# Lockscreen
+super + shift + o
+	~/stuff/lock/lock.sh
+
+# Spawn a new terminal
 super + Return
 	kitty
 
-# program launcher
+# Launch dmenu
 super + @space
 	rofi -show drun
 
-# make sxhkd reload its configuration files:
-super + Escape
-	pkill -USR1 -x sxhkd
+Print
+	flameshot full -p Pictures/flameshot/
 
-#
-# bspwm hotkeys
-#
-super + shift + p
-	flameshot full -p Pictures/screenshots
+super + d
+	dmenu_run
 
-super + shift + e
-	nemo
-
-super + shift + r
-	kitty -e ranger
-
-ctrl + Escape
-	xkill
+# Volume buttons
+XF86AudioRaiseVolume
+    pactl set-sink-volume 0 +5%
+XF86AudioLowerVolume
+    pactl set-sink-volume 0 -5%
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
 
 ctrl + l
-	i3lock -i Pictures/minimalist.jpg  -t
-
-super + shift + b
-	brave
-
-super + shift + f
-	fsearch
-
-super + shift + n
-	firefox web.whatsapp.com
+	 i3lock -i Pictures/lock.png
 
 super + shift + u
-	brightnessctl set 2%- 
+	light -U 5%
 
 super + shift + i
-	brightnessctl set 5%+ 
+	light -A 5%
 
-super + ctrl + alt + q
-	shutdown now
+# Just for mpd
+super + XF86AudioRaiseVolume
+	mpc volume +5
+super + XF86AudioLowerVolume
+	mpc volume -5
+XF86AudioPrev
+	mpc prev
+XF86AudioNext
+	mpc next
+XF86AudioPlay
+	mpc toggle
+
+# Nemo 
+super + shift + e
+	nemo
+super + shift + b
+	brave-browser
+
+
 # quit/restart bspwm
 super + alt + {q,r}
 	bspc {quit,wm -r}
